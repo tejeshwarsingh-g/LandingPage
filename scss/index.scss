@@ -1,0 +1,1114 @@
+@use 'sass:map';
+@use './custom.scss';
+@use './animation.scss';
+
+
+.text-primary {
+  color: #064a93;
+}
+.text-primary-dark {
+  color: #021931;
+}
+
+.text-light {
+  color: #fff;
+}
+.text-light-dark {
+  color: #ebf2fa;
+}
+
+.btn-primary {
+  background: #064a93;
+  color: #fff;
+}
+.btn-primary:hover {
+  background: #0757ab;
+}
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem #427aa1;
+  outline: none;
+}
+
+.btn-default,
+input {
+  padding: 15px 30px !important;
+}
+
+.nav {
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+.nav .logo a {
+  font-size: 26px;
+  font-weight: bold;
+  color: #021931;
+}
+.nav .main-menu {
+  display: flex;
+}
+.nav .main-menu li {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.nav .main-menu li a {
+  color: #021931;
+  font-size: 18px;
+  font-weight: 600;
+}
+.nav .social .icon {
+  font-size: 24px;
+  color: #021931;
+}
+
+.nav-sm {
+  display: none;
+  background: #ffffff;
+  z-index: 10;
+  position: relative;
+  padding: 10px 40px;
+}
+.nav-sm .nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-sm .nav-header .logo a {
+  font-size: 26px;
+  font-weight: bold;
+  color: #021931;
+}
+.nav-sm .nav-menu-list ul {
+  padding: 0;
+}
+.nav-sm .nav-menu-list ul li {
+  margin: 10px 50%;
+}
+.nav-sm .nav-menu-list ul li a {
+  color: #021931;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hero {
+  background: url("https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100%;
+}
+.hero .overlay {
+  background: rgba(2, 25, 49, 0.8);
+  z-index: 1;
+}
+.hero .container {
+  display: flex;
+  z-index: 1;
+  position: relative;
+  align-items: center;
+}
+.hero .container .content {
+  width: 50%;
+  padding: 10.5%;
+}
+.hero .container .content .lead {
+  color: #fff;
+  font-size: 24px;
+}
+.hero .container .content .display-1 {
+  font-size: 96px;
+  color: #fff;
+}
+.hero .container .content .btn {
+  font-size: 16px;
+  color: #ebf2fa;
+  padding: 15px 30px;
+  text-transform: uppercase;
+}
+
+.sub-content {
+  padding: 3% 10%;
+  background: #ebf2fa;
+}
+.sub-content .card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.sub-content .card-container .card {
+  width: 33.33%;
+  padding: 30px 60px;
+  margin: auto;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+}
+.sub-content .card-container .card .card-fig .card-img i {
+  font-size: 48px;
+}
+.sub-content .card-container .card .card-body h3 {
+  font-size: 36px;
+  font-weight: normal;
+  margin-top: 0.7rem;
+}
+.sub-content .card-container .card .card-body p {
+  font-size: 18px;
+}
+.sub-content .divider {
+  width: 60%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border: 0;
+  border-top: 1px solid rgba(6, 74, 147, 0.5);
+}
+.sub-content .divider-vertical {
+  border: 0;
+  border-left: 1.85px solid rgba(6, 74, 147, 0.5);
+  margin-left: 7%;
+  margin-right: 7%;
+}
+.sub-content .contact-newsletter {
+  background: #fff;
+  padding: 20px 40px;
+  width: 50%;
+  margin: 0 auto;
+}
+.sub-content .contact-newsletter .container {
+  margin: 60px 0;
+}
+.sub-content .contact-newsletter .container h3 {
+  font-size: 36px;
+  margin-top: 0;
+}
+.sub-content .contact-newsletter .container p {
+  font-size: 24px;
+}
+.sub-content .contact-newsletter .container form {
+  margin: auto;
+  justify-content: center;
+  width: 80%;
+}
+.sub-content .contact-newsletter .container form .email {
+  width: -webkit-fill-available;
+}
+.sub-content .contact-newsletter .container form button {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.sub-content .work {
+  margin: 5% auto;
+}
+.sub-content .work .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+.sub-content .work .row .col {
+  flex: 0 0 auto;
+}
+.sub-content .work .row .work-img {
+  height: auto;
+  width: 30%;
+}
+.sub-content .work .row .work-img img {
+  width: 100%;
+  height: 100%;
+}
+.sub-content .work .row .work-content {
+  background: #021931;
+  padding: 10px 70px;
+  width: 70%;
+  box-sizing: border-box;
+}
+.sub-content .work .row .work-content h3 {
+  font-size: 48px;
+}
+.sub-content .work .row .work-content ul {
+  list-style: circle;
+  margin: 3rem auto;
+}
+.sub-content .work .row .work-content ul li p {
+  font-size: 21px;
+}
+.sub-content .contact {
+  background: #fff;
+  padding: 1.75rem 5rem;
+}
+.sub-content .contact h3 {
+  font-size: 48px;
+  font-weight: normal;
+}
+.sub-content .contact .contact-details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.sub-content .contact .contact-details .contact-form {
+  width: 50%;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  padding-right: 2rem;
+  border-right: 1.85px solid rgba(6, 74, 147, 0.2);
+}
+.sub-content .contact .contact-details .contact-form form .legend {
+  position: relative;
+  margin: 0.75rem auto;
+}
+.sub-content .contact .contact-details .contact-form form .legend .legend-label {
+  font-family: "Varela Round", sans-serif;
+  color: #427aa1;
+  left: 1.95rem;
+  position: absolute;
+  top: 0;
+  display: block;
+}
+.sub-content .contact .contact-details .contact-form form .legend .legend-label:not(.show) {
+  margin-top: 1.25rem;
+  font-size: 1.25rem;
+  animation-name: hideLegendFormAnim;
+  animation-duration: 0.3s;
+}
+.sub-content .contact .contact-details .contact-form form .legend .legend-label:not(.show) + .form-control {
+  width: -webkit-fill-available;
+}
+.sub-content .contact .contact-details .contact-form form .legend .legend-label.show {
+  margin-top: 0.25rem;
+  font-size: 14px;
+  animation-name: showLegendFormAnim;
+  animation-duration: 0.3s;
+}
+.sub-content .contact .contact-details .contact-form form .legend .legend-label.show + .form-control {
+  width: -webkit-fill-available;
+  padding: 22px 30px 8px !important;
+}
+.sub-content .contact .contact-details .contact-form form .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.sub-content .contact .contact-details .contact-form form .row .form-check {
+  margin-right: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.sub-content .contact .contact-details .contact-form form .row .form-check .form-check-input {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+.sub-content .contact .contact-details .contact-form form .row .form-check .form-check-label {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 2px 10px;
+  color: #427aa1;
+}
+.sub-content .contact .contact-details .contact-form form button.btn {
+  margin-left: auto;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.sub-content .contact .contact-details .info {
+  width: 50%;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  padding-left: 1.25rem;
+}
+.sub-content .contact .contact-details .info a {
+  display: block;
+  margin: 1rem auto;
+  font-size: 1.25rem;
+}
+.sub-content .contact .contact-details .info a i {
+  margin-right: 15px;
+  vertical-align: text-bottom;
+  color: #427aa1;
+}
+.sub-content .contact .contact-details .info .location {
+  padding: 0.375rem 0.75rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer {
+  padding: 2% 10%;
+  background: #021931;
+  color: #fff;
+}
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .row .company h1 {
+  font-size: 48px;
+}
+footer .row .menu ul li {
+  margin: 15px auto;
+}
+footer .row .menu ul li a {
+  font-size: 18px;
+  color: #fff;
+}
+footer .row .social .btn {
+  margin: 10px 10px;
+}
+footer .row .social .btn i {
+  color: #000;
+  font-size: 1.25rem;
+}
+
+.footer-copy {
+  background: #fff;
+  padding: 30px;
+}
+.footer-copy p {
+  margin: 0 auto;
+  font-size: 1.25rem;
+}
+
+.nav-menu-list {
+  width: 100%;
+  background: #fff;
+  z-index: 2;
+  position: relative;
+}
+.nav-menu-list ul li a {
+  font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+  .nav .main-menu li a {
+    font-size: 16px;
+  }
+  .nav .social .icon {
+    font-size: 16px;
+  }
+
+  .hero .container .content .lead {
+    font-size: 18px;
+  }
+  .hero .container .content .display-1 {
+    font-size: 72px;
+  }
+  .hero .container .content .btn {
+    font-size: 14px;
+  }
+
+  .sub-content .card-container .card .card-body h3 {
+    font-size: 24px;
+  }
+  .sub-content .card-container .card .card-body p {
+    font-size: 12px;
+  }
+  .sub-content .contact-newsletter .container h3 {
+    font-size: 24px;
+  }
+  .sub-content .contact-newsletter .container p {
+    font-size: 18px;
+  }
+  .sub-content .contact-newsletter .container form .email {
+    font-size: 1rem;
+  }
+  .sub-content .contact-newsletter .container form button {
+    font-size: 1rem !important;
+  }
+  .sub-content .work .row .work-content h3 {
+    font-size: 36px;
+  }
+  .sub-content .work .row .work-content ul li p {
+    font-size: 18px;
+  }
+  .sub-content .contact h3 {
+    font-size: 36px;
+  }
+  .sub-content .contact .contact-details .contact-form form .legend-label:not(.show) {
+    font-size: 1rem !important;
+  }
+  .sub-content .contact .contact-details .contact-form form .legend-label:not(.show) + .form-control {
+    font-size: 1rem !important;
+  }
+  .sub-content .contact .contact-details .contact-form form .legend-label.show {
+    font-size: 14px;
+  }
+  .sub-content .contact .contact-details .contact-form form .legend-label.show + .form-control {
+    font-size: 1rem !important;
+  }
+  .sub-content .contact .contact-details .contact-form form .row .form-check-input {
+    height: 1rem;
+    width: 1rem;
+  }
+  .sub-content .contact .contact-details .contact-form form .row .form-check-label {
+    font-size: 1rem !important;
+  }
+  .sub-content .contact .contact-details .contact-form form button.btn {
+    font-size: 1rem !important;
+  }
+  .sub-content .contact .contact-details .info a {
+    font-size: 1rem;
+  }
+
+  footer .row .company h1 {
+    font-size: 36px;
+  }
+  footer .row .menu ul li a {
+    font-size: 14px;
+  }
+  footer .row .social .btn i {
+    font-size: 1rem;
+  }
+
+  .footer-copy p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1024px) {
+  .nav .main-menu li a {
+    font-size: 16px;
+  }
+  .nav .social .icon {
+    font-size: 16px;
+  }
+
+  .hero .container .content .lead {
+    font-size: 18px;
+  }
+  .hero .container .content .display-1 {
+    font-size: 72px;
+  }
+  .hero .container .content .btn {
+    font-size: 14px;
+  }
+
+  .sub-content {
+    padding: 3% 5%;
+  }
+  .sub-content .card-container .card .card-body h3 {
+    font-size: 24px;
+  }
+  .sub-content .card-container .card .card-body p {
+    font-size: 12px;
+  }
+  .sub-content .contact-newsletter .container h3 {
+    font-size: 24px;
+  }
+  .sub-content .contact-newsletter .container p {
+    font-size: 18px;
+  }
+  .sub-content .contact-newsletter .container form .email {
+    font-size: 1rem;
+  }
+  .sub-content .contact-newsletter .container form button {
+    font-size: 1rem !important;
+  }
+  .sub-content .work .row .work-content h3 {
+    font-size: 36px;
+  }
+  .sub-content .work .row .work-content ul li p {
+    font-size: 18px;
+  }
+  .sub-content .contact h3 {
+    font-size: 36px;
+  }
+  .sub-content .contact .contact-details .contact-form form .legend-label:not(.show) {
+    font-size: 1rem !important;
+  }
+  .sub-content .contact .contact-details .contact-form form .legend-label:not(.show) + .form-control {
+    font-size: 1rem !important;
+  }
+  .sub-content .contact .contact-details .contact-form form .legend-label.show {
+    font-size: 14px;
+  }
+  .sub-content .contact .contact-details .contact-form form .legend-label.show + .form-control {
+    font-size: 1rem !important;
+  }
+  .sub-content .contact .contact-details .contact-form form .row .form-check-input {
+    height: 1rem;
+    width: 1rem;
+  }
+  .sub-content .contact .contact-details .contact-form form .row .form-check-label {
+    font-size: 1rem !important;
+  }
+  .sub-content .contact .contact-details .contact-form form button.btn {
+    font-size: 1rem !important;
+  }
+  .sub-content .contact .contact-details .info a {
+    font-size: 1rem;
+  }
+
+  footer .row .company h1 {
+    font-size: 36px;
+  }
+  footer .row .menu ul li a {
+    font-size: 14px;
+  }
+  footer .row .social .btn i {
+    font-size: 1rem;
+  }
+
+  .footer-copy p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 900px) {
+  .nav .main-menu li a {
+    font-size: 16px;
+  }
+  .nav .social .icon {
+    font-size: 16px;
+  }
+
+  .hero .container .content .lead {
+    font-size: 18px;
+  }
+  .hero .container .content .display-1 {
+    font-size: 72px;
+  }
+  .hero .container .content .btn {
+    font-size: 14px;
+  }
+
+  .sub-content {
+    padding: 3% 5%;
+  }
+  .sub-content .card-container .card {
+    width: 50%;
+  }
+  .sub-content .card-container .card .card-body h3 {
+    font-size: 24px;
+  }
+  .sub-content .card-container .card .card-body p {
+    font-size: 12px;
+  }
+  .sub-content .contact-newsletter .container h3 {
+    font-size: 24px;
+  }
+  .sub-content .contact-newsletter .container p {
+    font-size: 18px;
+  }
+  .sub-content .contact-newsletter .container form .email {
+    font-size: 1rem;
+  }
+  .sub-content .contact-newsletter .container form button {
+    font-size: 1rem !important;
+  }
+  .sub-content .work .row .work-img {
+    display: none;
+  }
+  .sub-content .work .row .work-content {
+    width: 100%;
+  }
+  .sub-content .work .row .work-content h3 {
+    font-size: 36px;
+  }
+  .sub-content .work .row .work-content ul li p {
+    font-size: 18px;
+  }
+  .sub-content .contact h3 {
+    font-size: 36px;
+  }
+  .sub-content .contact .contact-details .contact-form {
+    width: 100%;
+    padding-right: 0;
+    border: 0;
+    border-bottom: 1.85px solid rgba(6, 74, 147, 0.2);
+  }
+  .sub-content .contact .contact-details .contact-form form .legend-label:not(.show) {
+    font-size: 1rem !important;
+  }
+  .sub-content .contact .contact-details .contact-form form .legend-label:not(.show) + .form-control {
+    font-size: 1rem !important;
+  }
+  .sub-content .contact .contact-details .contact-form form .legend-label.show {
+    font-size: 14px;
+  }
+  .sub-content .contact .contact-details .contact-form form .legend-label.show + .form-control {
+    font-size: 1rem !important;
+  }
+  .sub-content .contact .contact-details .contact-form form .row .form-check-input {
+    height: 1rem;
+    width: 1rem;
+  }
+  .sub-content .contact .contact-details .contact-form form .row .form-check-label {
+    font-size: 1rem !important;
+  }
+  .sub-content .contact .contact-details .contact-form form button.btn {
+    font-size: 1rem !important;
+  }
+  .sub-content .contact .contact-details .info {
+    width: 100%;
+    padding-left: 0;
+  }
+  .sub-content .contact .contact-details .info a {
+    font-size: 1rem;
+  }
+
+  footer .row .company h1 {
+    font-size: 36px;
+  }
+  footer .row .menu ul li a {
+    font-size: 14px;
+  }
+  footer .row .social .btn i {
+    font-size: 1rem;
+  }
+
+  .footer-copy p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .nav .main-menu {
+    display: none;
+  }
+  .nav .main-menu li a {
+    font-size: 16px;
+  }
+  .nav .social {
+    display: none;
+  }
+  .nav .social .icon {
+    font-size: 16px;
+  }
+
+  .nav-sm {
+    display: block;
+    background: #ffffff;
+    z-index: 10;
+    position: relative;
+    padding: 10px 40px;
+  }
+  .nav-sm .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-sm .nav-header .logo a {
+    font-size: 26px;
+    font-weight: bold;
+    color: #021931;
+  }
+  .nav-sm .nav-menu-list {
+    display: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .nav-sm .nav-menu-list.show {
+    display: block;
+  }
+  .nav-sm .nav-menu-list ul {
+    padding: 0;
+  }
+  .nav-sm .nav-menu-list ul li {
+    margin: 10px 50%;
+  }
+  .nav-sm .nav-menu-list ul li a {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .hero .container .content .lead {
+    font-size: 18px;
+  }
+  .hero .container .content .display-1 {
+    font-size: 48px;
+  }
+  .hero .container .content .btn {
+    font-size: 14px;
+  }
+
+  .sub-content {
+    padding: 3% 5%;
+  }
+  .sub-content .card-container .card {
+    width: 50%;
+  }
+  .sub-content .card-container .card .card-body h3 {
+    font-size: 24px;
+  }
+  .sub-content .card-container .card .card-body p {
+    font-size: 12px;
+  }
+  .sub-content .contact-newsletter {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .sub-content .contact-newsletter .container h3 {
+    font-size: 24px;
+  }
+  .sub-content .contact-newsletter .container p {
+    font-size: 18px;
+  }
+  .sub-content .contact-newsletter .container form .email {
+    font-size: 1rem;
+  }
+  .sub-content .contact-newsletter .container form button {
+    font-size: 1rem !important;
+  }
+  .sub-content .work .row .work-img {
+    display: none;
+  }
+  .sub-content .work .row .work-content {
+    width: 100%;
+  }
+  .sub-content .work .row .work-content h3 {
+    font-size: 36px;
+  }
+  .sub-content .work .row .work-content ul li p {
+    font-size: 18px;
+  }
+  .sub-content .contact h3 {
+    font-size: 36px;
+  }
+  .sub-content .contact .contact-details .contact-form {
+    width: 100%;
+    padding-right: 0;
+    border: 0;
+    border-bottom: 1.85px solid rgba(6, 74, 147, 0.2);
+  }
+  .sub-content .contact .contact-details .contact-form form .legend-label:not(.show) {
+    font-size: 1rem !important;
+  }
+  .sub-content .contact .contact-details .contact-form form .legend-label:not(.show) + .form-control {
+    font-size: 1rem !important;
+  }
+  .sub-content .contact .contact-details .contact-form form .legend-label.show {
+    font-size: 14px;
+  }
+  .sub-content .contact .contact-details .contact-form form .legend-label.show + .form-control {
+    font-size: 1rem !important;
+  }
+  .sub-content .contact .contact-details .contact-form form .row .form-check-input {
+    height: 1rem;
+    width: 1rem;
+  }
+  .sub-content .contact .contact-details .contact-form form .row .form-check-label {
+    font-size: 1rem !important;
+  }
+  .sub-content .contact .contact-details .contact-form form button.btn {
+    font-size: 1rem !important;
+  }
+  .sub-content .contact .contact-details .info {
+    width: 100%;
+    padding-left: 0;
+  }
+  .sub-content .contact .contact-details .info a {
+    font-size: 1rem;
+  }
+
+  footer .row .company h1 {
+    font-size: 36px;
+  }
+  footer .row .menu ul li a {
+    font-size: 14px;
+  }
+  footer .row .social .btn i {
+    font-size: 1rem;
+  }
+
+  .footer-copy p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .nav .logo a {
+    font-size: 18px;
+  }
+  .nav .main-menu {
+    display: none;
+  }
+  .nav .main-menu li a {
+    font-size: 14px;
+  }
+  .nav .social {
+    display: none;
+  }
+  .nav .social .icon {
+    font-size: 16px;
+  }
+
+  .hero .container .content {
+    width: 100%;
+  }
+  .hero .container .content .lead {
+    font-size: 14px;
+  }
+  .hero .container .content .display-1 {
+    font-size: 36px;
+  }
+  .hero .container .content .btn {
+    font-size: 10px;
+  }
+
+  .sub-content {
+    padding: 3% 5%;
+  }
+  .sub-content .card-container .card {
+    width: 50%;
+    padding: 30px;
+  }
+  .sub-content .card-container .card .card-body h3 {
+    font-size: 18px;
+  }
+  .sub-content .card-container .card .card-body p {
+    font-size: 10px;
+  }
+  .sub-content .contact-newsletter {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .sub-content .contact-newsletter .container h3 {
+    font-size: 18px;
+  }
+  .sub-content .contact-newsletter .container p {
+    font-size: 14px;
+  }
+  .sub-content .contact-newsletter .container form .email {
+    font-size: 14px;
+  }
+  .sub-content .contact-newsletter .container form button {
+    font-size: 14px !important;
+  }
+  .sub-content .work .row .work-img {
+    display: none;
+  }
+  .sub-content .work .row .work-content {
+    width: 100%;
+  }
+  .sub-content .work .row .work-content h3 {
+    font-size: 24px;
+  }
+  .sub-content .work .row .work-content ul li p {
+    font-size: 12px;
+  }
+  .sub-content .contact h3 {
+    font-size: 24px;
+  }
+  .sub-content .contact .contact-details .contact-form {
+    width: 100%;
+    padding-right: 0;
+    border: 0;
+    border-bottom: 1.85px solid rgba(6, 74, 147, 0.2);
+  }
+  .sub-content .contact .contact-details .contact-form form .legend-label:not(.show) {
+    font-size: 14px !important;
+  }
+  .sub-content .contact .contact-details .contact-form form .legend-label:not(.show) + .form-control {
+    font-size: 14px !important;
+  }
+  .sub-content .contact .contact-details .contact-form form .legend-label.show {
+    font-size: 12px !important;
+  }
+  .sub-content .contact .contact-details .contact-form form .legend-label.show + .form-control {
+    font-size: 14px !important;
+  }
+  .sub-content .contact .contact-details .contact-form form .row .form-check-input {
+    height: 14px;
+    width: 14px;
+  }
+  .sub-content .contact .contact-details .contact-form form .row .form-check-label {
+    font-size: 14px !important;
+  }
+  .sub-content .contact .contact-details .contact-form form button.btn {
+    font-size: 14px !important;
+  }
+  .sub-content .contact .contact-details .info {
+    width: 100%;
+    padding-left: 0;
+  }
+  .sub-content .contact .contact-details .info a {
+    font-size: 14px;
+    margin: 14px auto;
+  }
+
+  footer .row {
+    flex-wrap: wrap;
+  }
+  footer .row .company {
+    width: 100%;
+  }
+  footer .row .company h1 {
+    font-size: 24px;
+  }
+  footer .row .menu {
+    width: 100%;
+  }
+  footer .row .menu ul {
+    display: flex;
+    padding-left: 0;
+  }
+  footer .row .menu ul li a {
+    font-size: 14px;
+  }
+  footer .row .social .btn {
+    margin: 15px 10px;
+  }
+  footer .row .social .btn i {
+    font-size: 14px;
+  }
+
+  .footer-copy p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+  .nav .logo a {
+    font-size: 18px;
+  }
+  .nav .main-menu {
+    display: none;
+  }
+  .nav .main-menu li a {
+    font-size: 14px;
+  }
+  .nav .social {
+    display: none;
+  }
+  .nav .social .icon {
+    font-size: 16px;
+  }
+
+  .hero .container .content {
+    width: 100%;
+  }
+  .hero .container .content .lead {
+    font-size: 14px;
+  }
+  .hero .container .content .display-1 {
+    font-size: 36px;
+  }
+  .hero .container .content .btn {
+    font-size: 10px;
+  }
+
+  .sub-content {
+    padding: 3% 5%;
+  }
+  .sub-content .card-container .card {
+    width: 100%;
+    padding: 10px 30px;
+  }
+  .sub-content .card-container .card .card-body h3 {
+    font-size: 18px;
+  }
+  .sub-content .card-container .card .card-body p {
+    font-size: 10px;
+  }
+  .sub-content .divider {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .sub-content .contact-newsletter {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .sub-content .contact-newsletter .container h3 {
+    font-size: 18px;
+  }
+  .sub-content .contact-newsletter .container p {
+    font-size: 14px;
+  }
+  .sub-content .contact-newsletter .container form {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .sub-content .contact-newsletter .container form .email {
+    font-size: 14px;
+  }
+  .sub-content .contact-newsletter .container form button {
+    margin: 10px auto;
+    font-size: 14px !important;
+  }
+  .sub-content .work .row .work-img {
+    display: none;
+  }
+  .sub-content .work .row .work-content {
+    width: 100%;
+    padding: 10px 30px;
+  }
+  .sub-content .work .row .work-content h3 {
+    font-size: 24px;
+  }
+  .sub-content .work .row .work-content ul li p {
+    font-size: 12px;
+  }
+  .sub-content .contact {
+    padding: 1.75rem 2rem;
+  }
+  .sub-content .contact h3 {
+    font-size: 24px;
+  }
+  .sub-content .contact .contact-details .contact-form {
+    width: 100%;
+    padding-right: 0;
+    border: 0;
+    border-bottom: 1.85px solid rgba(6, 74, 147, 0.2);
+  }
+  .sub-content .contact .contact-details .contact-form form .legend-label:not(.show) {
+    font-size: 14px !important;
+  }
+  .sub-content .contact .contact-details .contact-form form .legend-label:not(.show) + .form-control {
+    font-size: 14px !important;
+  }
+  .sub-content .contact .contact-details .contact-form form .legend-label.show {
+    font-size: 12px !important;
+  }
+  .sub-content .contact .contact-details .contact-form form .legend-label.show + .form-control {
+    font-size: 14px !important;
+  }
+  .sub-content .contact .contact-details .contact-form form .row .form-check-input {
+    height: 14px;
+    width: 14px;
+  }
+  .sub-content .contact .contact-details .contact-form form .row .form-check-label {
+    font-size: 14px !important;
+  }
+  .sub-content .contact .contact-details .contact-form form button.btn {
+    font-size: 14px !important;
+  }
+  .sub-content .contact .contact-details .info {
+    width: 100%;
+    padding-left: 0;
+  }
+  .sub-content .contact .contact-details .info a {
+    font-size: 14px;
+    margin: 14px auto;
+  }
+
+  footer .row {
+    flex-wrap: wrap;
+  }
+  footer .row .company {
+    width: 100%;
+  }
+  footer .row .company h1 {
+    font-size: 24px;
+  }
+  footer .row .menu {
+    width: 100%;
+  }
+  footer .row .menu ul {
+    display: flex;
+    padding-left: 0;
+  }
+  footer .row .menu ul li a {
+    font-size: 14px;
+  }
+  footer .row .social .btn {
+    margin: 15px 10px;
+  }
+  footer .row .social .btn i {
+    font-size: 14px;
+  }
+
+  .footer-copy p {
+    font-size: 14px;
+  }
+}

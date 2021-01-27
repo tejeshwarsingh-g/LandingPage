@@ -1,0 +1,20 @@
+@keyframes showLegendFormAnim {
+  from {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+  }
+  to {
+    margin-top: 0.25rem;
+    font-size: 14px;
+  }
+}
+@keyframes hideLegendFormAnim {
+  from {
+    margin-top: 0.25rem;
+    font-size: 14px;
+  }
+  to {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+  }
+}
